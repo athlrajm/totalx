@@ -1,4 +1,4 @@
-// App.tsx
+
 
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -26,7 +26,7 @@ const App = () => {
       }
       dispatch(setLoading(false));
     });
-    return () => unsubscribe(); // Cleanup function for useEffect
+    return () => unsubscribe(); 
   }, [dispatch]);
 
   const handleLogout = () => {

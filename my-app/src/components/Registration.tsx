@@ -33,7 +33,7 @@ const Registration = () => {
         await userRef.set({
           name: values.name,
           email: values.email,
-          phoneNumber: currentUser.phoneNumber || "", // Access phoneNumber if available
+          phoneNumber: currentUser.phoneNumber || "", 
         });
 
         navigate("/home");

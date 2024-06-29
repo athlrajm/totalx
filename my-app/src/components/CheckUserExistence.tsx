@@ -29,7 +29,7 @@ const CheckUserExistence = () => {
         }
       } catch (error: any) {
         console.error("Error checking user existence:", error);
-        // Handle error state or redirect to login page
+       
       } finally {
         dispatch(setLoading(false));
       }
@@ -41,7 +41,7 @@ const CheckUserExistence = () => {
   return (
     <div>
       <h1>Checking User Existence...</h1>
-      {/* Optional: Add loading indicator */}
+      
     </div>
   );
 };

@@ -26,7 +26,7 @@ const OtpVerification = () => {
       const confirmationResult = (auth as any).confirmationResult;
       const result = await confirmationResult.confirm(values.otp);
       dispatch(setUser(result.user));
-    } catch (error: any) { // Explicitly type 'error' to 'any'
+    } catch (error: any) {
       dispatch(setError(error.message));
     } finally {
       dispatch(setLoading(false));

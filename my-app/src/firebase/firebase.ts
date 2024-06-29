@@ -2,7 +2,7 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
-// Your web app's Firebase configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyAk4T3mNk2RwSqadsUnk5I_yGyhlgjmEbo",
   authDomain: "login-32923.firebaseapp.com",
@@ -13,7 +13,7 @@ const firebaseConfig = {
   measurementId: "G-ZW7YD11E3B"
 };
 
-// Initialize Firebase
+
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
